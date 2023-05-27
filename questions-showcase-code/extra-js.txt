@@ -1,0 +1,149 @@
+
+class Quiz {
+  constructor() {
+    this.currentQuestion = document.querySelector('.main__container:not(.hidden)');
+    this.previousButton = document.querySelector('.previous-question');
+    this.addEventListeners();
+  }
+
+  addEventListeners() {
+    this.previousButton.addEventListener('click', () => {
+      this.showPreviousQuestion();
+    });
+  }
+
+  showPreviousQuestion() {
+    // get the previous question
+    const previousQuestion = this.currentQuestion.previousElementSibling;
+    if (previousQuestion) {
+      // hide the current question
+      this.currentQuestion.classList.add('hidden');
+      // show the previous question
+      previousQuestion.classList.remove('hidden');
+      // update the current question
+      this.currentQuestion = previousQuestion;
+    }
+  }
+}
+
+const quiz = new Quiz();
+
+
+
+function addArrows() {
+  const nextButton = document.querySelector('.next-question');
+  const questions = document.querySelectorAll('.questions__title');
+  let currentQuestionIndex = 0;
+
+  nextButton.addEventListener('click', () => {
+    const currentQuestion = questions[currentQuestionIndex];
+    const selectedChoice = document.querySelector('input[name="choice"]:checked');
+
+    if (selectedChoice) {
+      // Do something with the selected choice value
+      console.log(selectedChoice.value);
+    } else {
+      // Handle case where no choice is selected
+      console.log('Please select a choice');
+      return;
+    }
+
+    if (currentQuestionIndex < questions.length - 1) {
+      currentQuestion.classList.add('hidden');
+      currentQuestionIndex++;
+      const nextQuestion = questions[currentQuestionIndex];
+      nextQuestion.classList.remove('hidden');
+    } else {
+      // Handle case where all questions have been answered
+      console.log('All questions have been answered');
+      return;
+    }
+  });
+}
+
+addArrows();
+
+
+
+class Form {
+  constructor() {
+    this.currentQuestion = 0;
+    this.questions = document.querySelectorAll('.questions__container');
+    this.totalQuestions = this.questions.length;
+
+    // Hide all questions except the first one
+    for (let i = 1; i < this.totalQuestions; i++) {
+      this.questions[i].style.display = 'none';
+    }
+
+    // Add event listeners to the "Next" and "Previous" buttons
+    const nextBtn = document.querySelector('.next-question');
+    nextBtn.addEventListener('click', () => {
+      this.nextQuestion();
+    });
+
+    const prevBtn = document.querySelector('.previous-question');
+    prevBtn.addEventListener('click', () => {
+      this.previousQuestion();
+    });
+  }
+
+  // Go to the next question
+  nextQuestion() {
+    const currentQuestion = this.questions[this.currentQuestion];
+    const selectedChoice = currentQuestion.querySelector('input[name="choice"]:checked');
+
+    if (selectedChoice) {
+      // Do something with the selected choice value
+      console.log(selectedChoice.value);
+    } else {
+      // Handle case where no choice is selected
+      console.log('Please select a choice');
+      return;
+    }
+
+    if (this.currentQuestion < this.totalQuestions - 1) {
+      // Hide the current question
+      currentQuestion.style.display = 'none';
+
+      // Show the next question
+      this.currentQuestion++;
+      this.questions[this.currentQuestion].style.display = 'block';
+
+      // Update the progress bar
+      this.updateProgressBar();
+    } else {
+      // The form is complete
+      this.submitForm();
+    }
+  }
+
+  // Go to the previous question
+  previousQuestion() {
+    if (this.currentQuestion > 0) {
+      // Hide the current question
+      this.questions[this.currentQuestion].style.display = 'none';
+
+      // Show the previous question
+      this.currentQuestion--;
+      this.questions[this.currentQuestion].style.display = 'block';
+
+      // Update the progress bar
+      this.updateProgressBar();
+    }
+  }
+  
+  // Update the progress bar
+  updateProgressBar() {
+    const progressBar = document.querySelector('.progress-bar');
+    const percent = ((this.currentQuestion + 1) / this.totalQuestions) * 100;
+    progressBar.style.width = percent + '%';
+  }
+
+  // Submit the form
+  submitForm() {
+    // Do something with the form data
+  }
+}
+
+const form = new Form();

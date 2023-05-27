@@ -1,0 +1,294 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+@media (max-width: 62.5rem) {
+  .main-container {
+    display: flex;
+    height: 20rem;
+  }
+  .questions__title {
+    font-size: 2rem;
+    left: 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+.question-name {
+  display: flex;
+  height: 17rem;
+  padding-top: 10rem;
+  color: #ffffff;
+  z-index: 1000;
+  font-size: 2rem;
+  padding-left: 5rem;
+  font-size: 1.4rem;
+  flex-shrink: 1;
+}
+
+@media (max-width: 768px) {
+  .question-name {
+    font-size: 1.4rem;
+    height: auto;
+    padding: 2rem 1rem;
+    left: 2rem;
+    position: relative;
+    flex-shrink: 1;
+  }
+}
+.choice__container {
+  display: flex;
+  margin-left: 6rem;
+  width: 78%;
+  font-size: 1.8rem;
+  background-color: #604d8a;
+  color: #ffe600;
+}
+
+@media (max-width: 62.5rem) {
+  .choice__container {
+    margin-left: 0;
+    width: 100%;
+    font-size: 1.6rem;
+  }
+  .main-container {
+    display: flex;
+    height: 20rem;
+  }
+}
+.choice__prefix {
+  border: none;
+  padding: 1.5rem 3.5rem;
+  background: #ffd700;
+  height: 8rem;
+  width: 3rem;
+  padding-left: 2rem;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .choice__prefix {
+    padding: 1rem 2rem;
+    height: 4rem;
+    width: auto;
+  }
+  .main-container {
+    display: flex;
+    height: 20rem;
+  }
+}
+.choice__text {
+  position: absolute;
+  left: 9.5rem;
+  padding-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .choice__text {
+    left: auto;
+    text-align: center;
+    width: 36%;
+    padding-top: 3rem;
+  }
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  transform: scale(1.05);
+}
+
+.dropdown-content a:hover {
+  color: #8a7c00;
+  transform: scale(1.02);
+}
+
+.dropdown-content a:nth-of-type(3) {
+  border-bottom: none;
+}
+
+/* Toon het dropdown-menu met een fade-in animatie */
+.dropdown-content.show {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Definieer de fadeIn animatie */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+  height: 60rem;
+  background-color: #462F79;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5%;
+  flex-direction: column;
+}
+
+.questions__title {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  height: 0rem;
+  padding-top: 3rem;
+  justify-content: center;
+  position: absolute;
+  left: 35%;
+  text-align: center;
+  display: flex;
+  color: #ffd700;
+}
+
+.question-name {
+  display: flex;
+  height: 17rem;
+  padding-top: 10rem;
+  color: #ffffff;
+  z-index: 1000;
+  font-size: 2rem;
+  padding-left: 5rem;
+}
+
+.choice__container {
+  display: flex;
+  margin-bottom: 0.9rem;
+  margin-left: 5rem;
+  width: 80%;
+  font-size: 1.8rem;
+  background-color: #604d8a;
+  color: #ffe600;
+}
+
+.choice__prefix {
+  border: none;
+  padding: 1.5rem 3.5rem;
+  background: #ffd700;
+  height: 8rem;
+  width: 3rem;
+  padding-left: 2rem;
+  display: flex;
+}
+
+.choice__text {
+  position: absolute;
+  left: 9.5rem;
+  padding-top: 3rem;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-left: 35rem;
+  margin-right: 35rem;
+  z-index: 100;
+  gap: 15rem;
+}
+
+.previous-question {
+  cursor: pointer;
+  border: none;
+  height: 5rem;
+  width: 9rem;
+  position: absolute;
+  left: 20rem;
+  background-color: #ffd700;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+.next-question {
+  cursor: pointer;
+  border: none;
+  height: 5rem;
+  width: 9rem;
+  position: absolute;
+  right: 20rem;
+  background-color: #ffd700;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #2980B9;
+  border: none;
+  cursor: pointer;
+  border-radius: 80%;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  border: #000000 solid 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  top: 15px;
+  z-index: 2;
+}
+
+.dropdown-content {
+  display: none;
+  background: #201e1e;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0px; /* added */
+  border: black 3px solid;
+  border-radius: 10%;
+  gap: 4rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #ffe600;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid black; /* added */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("/img/hogwarts-3.webp") center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,120 @@
+@use "../abstracts/mixins";
+@use "../abstracts/colors";
+@use "../abstracts/mediaqueries";
+
+
+
+.main__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: 60rem;
+    background-color: map-get(colors.$dark-purp, "background");
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    flex-direction: column
+} 
+
+
+
+.questions__title{
+    @include mixins.fontPlayfair;
+    font-size: 4rem;
+    height: 0rem;
+    padding-top: 3rem;
+    justify-content: center;
+    position: absolute;
+    left: 35%;
+    text-align: center;
+    display: flex;
+    color: map-get(colors.$gold, "background");
+}
+
+.question-name{
+  display: flex;
+  height: 17rem;
+  padding-top: 10rem;
+  color: map-get(colors.$white, "color");
+  z-index: 1000;
+  font-size: 2rem;
+  padding-left: 5rem;
+}
+
+.choice__container{
+    display: flex;
+    margin-bottom: 0.9rem;
+    margin-left: 5rem;
+    width: 80%;
+    font-size: 1.8rem;
+    background-color: map-get(colors.$light-purp, "background");
+    color: map-get(colors.$yellow, "color");
+  }
+
+  .choice__prefix{
+    border: none;
+    padding: 1.5rem 3.5rem;
+    background: map-get(colors.$gold, "background");
+    color: map-get(colors.$black, "color");
+    height: 8rem;
+    width: 3rem ;
+    padding-left: 2rem;
+    display: flex;
+  }
+
+  .choice__text{
+    position: absolute;
+    left: 9.5rem;
+    padding-top: 3rem;
+  }
+
+
+ 
+  
+  .choice__container.selected {
+    background-color: map-get(colors.$background-white, "background");
+  }
+  
+
+
+
+  .buttonWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-left: 35rem;
+    margin-right: 35rem;
+    z-index: 100;
+    gap: 15rem;
+  }
+
+ 
+
+.previous-question {
+  cursor: pointer;
+  border: none;
+  height: 5rem;
+  width: 9rem;
+  position: absolute;
+  left: 20rem;
+  background-color: map-get(colors.$gold, "background");
+  color: map-get(colors.$black, "color");
+  @include mixins.border-radius-all;
+
+}
+
+.next-question {
+  cursor: pointer;
+  border: none;
+  height: 5rem;
+  width: 9rem;
+  position: absolute;
+  right: 20rem;
+  background-color: map-get(colors.$gold, "background");
+  color: map-get(colors.$black, "color");
+  @include mixins.border-radius-all;
+}

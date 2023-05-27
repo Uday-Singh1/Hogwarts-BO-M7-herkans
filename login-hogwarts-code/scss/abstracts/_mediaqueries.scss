@@ -1,0 +1,59 @@
+@use "./colors";
+
+
+@media  screen and (max-width: 1000px) {
+
+    .main__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100%;
+        z-index: 1;
+        position: absolute;
+
+    
+    }
+    
+    .main__container-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: map-get(colors.$dark-purp, "background-color");
+        max-height: 70rem;
+        max-width: 60rem;
+        text-align: center;
+        flex-direction: column;
+        font-size: 4rem;
+        padding-top: 3rem;
+        color: map-get(colors.$gold-rgb, "color");
+        
+
+       &__container-1:hover{
+        opacity: 85%;
+        transition: 0.5s;
+        cursor: pointer;
+       }
+    }
+    
+    
+    .main__container-2 {
+        background-color: map-get(colors.$light-gray, "background-color");
+        max-height: 30rem;
+        max-width: 40rem; 
+        text-align: center;
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    
+    input{
+        align-items: center;
+        margin-top: 7rem;
+        height: 5rem;
+        width: 60%;
+    }
+    
+    img{
+        width: 200%;
+}
+
+}

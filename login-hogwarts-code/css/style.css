@@ -1,0 +1,211 @@
+@media screen and (max-width: 1000px) {
+  .main__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+  .main__container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 70rem;
+    max-width: 60rem;
+    text-align: center;
+    flex-direction: column;
+    font-size: 4rem;
+    padding-top: 3rem;
+    color: rgb(255, 255, 0);
+  }
+  .main__container-1__container-1:hover {
+    opacity: 85%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .main__container-2 {
+    background-color: #c3c3c3;
+    max-height: 30rem;
+    max-width: 40rem;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  input {
+    align-items: center;
+    margin-top: 7rem;
+    height: 5rem;
+    width: 60%;
+  }
+  img {
+    width: 200%;
+  }
+}
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+.hg__logo:hover {
+  transform: scale(1.2);
+}
+
+.main__name:hover,
+.main__name:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+.main__name {
+  transition: background-size 400ms;
+}
+
+a:link, a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+body {
+  background: url("/img/hogwarts-3.webp") center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Playfair Display", serif;
+}
+
+main {
+  width: 100%;
+  z-index: -1;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  width: 27rem;
+  align-items: center;
+  margin: auto;
+  margin-top: 4.8rem;
+}
+
+input::placeholder {
+  align-items: center;
+  margin-top: 7rem;
+  height: 5rem;
+  width: 60%;
+  font-size: 15px;
+}
+
+.start__button {
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  width: 20rem;
+  height: 4rem;
+  background-color: #F4C05D;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  z-index: 1;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.start__button:hover {
+  background-color: #F4C05D;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.start__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
+.main__container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #604d8a;
+  height: 70rem;
+  width: 60rem;
+  text-align: center;
+  flex-direction: column;
+  font-size: 4rem;
+  padding-top: 3rem;
+  color: #F4C05D;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: inset black 0.2rem;
+}
+
+.main__container-1:hover {
+  background-color: rgba(96, 77, 138, 0.8);
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.main__container-2 {
+  background-color: #462F79;
+  height: 26rem;
+  width: 46rem;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+  border-radius: 0.9rem;
+}
+
+.hg__logo__button {
+  background: none;
+  border: none;
+}
+
+.hg__logo {
+  display: flex;
+  height: 13rem;
+  width: 13rem;
+  transition: all 0.3s ease-in-out;
+}
+
+label {
+  font-family: "Playfair Display", serif;
+}
+
+.main__name {
+  padding-bottom: 14rem;
+  font-size: 5rem;
+  justify-content: space-between;
+  font-family: "Playfair Display", serif;
+  background: linear-gradient(to right, rgb(255, 0, 0), rgb(76, 106, 42), rgb(234, 218, 129), rgb(0, 100, 200));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=style.css.map */

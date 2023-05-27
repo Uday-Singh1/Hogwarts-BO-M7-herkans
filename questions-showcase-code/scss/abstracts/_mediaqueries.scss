@@ -1,0 +1,108 @@
+@use "./colors";
+@use "./mixins";
+
+
+  
+  @media (max-width: 62.5rem) {
+
+
+    .main-container{
+        display: flex;
+        height: 20rem;
+    }
+    .questions__title{
+      font-size: 2rem;
+      left: 0;
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+  
+  .question-name{
+    display: flex;
+    height: 17rem;
+    padding-top: 10rem;
+    color: map-get(colors.$white, "color");
+    z-index: 1000;
+    font-size: 2rem;
+    padding-left: 5rem;
+    font-size: 1.4rem;
+    flex-shrink: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .question-name{
+      font-size: 1.4rem;
+      height: auto;
+      padding: 2rem 1rem;
+      left: 2rem;
+      position: relative;
+      flex-shrink: 1;
+    }
+  }
+  
+  .choice__container{
+    display: flex;
+
+    margin-left: 6rem;
+    width: 78%;
+    font-size: 1.8rem;
+    background-color: map-get(colors.$light-purp, "background");
+    color: map-get(colors.$yellow, "color");
+  }
+  
+  @media (max-width: 62.5rem) {
+    .choice__container{
+      margin-left: 0;
+      width: 100%;
+      font-size: 1.6rem;
+    }
+
+    .main-container{
+        display: flex;
+        height: 20rem;
+    }
+  }
+  
+  .choice__prefix{
+    border: none;
+    padding: 1.5rem 3.5rem;
+    background: map-get(colors.$gold, "background");
+    color: map-get(colors.$black, "color");
+    height: 8rem;
+    width: 3rem ;
+    padding-left: 2rem;
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    .choice__prefix{
+      padding: 1rem 2rem;
+      height: 4rem;
+      width: auto;
+    }
+
+    .main-container{
+        display: flex;
+        height: 20rem;
+    }
+  }
+  
+  .choice__text{
+    position: absolute;
+    left: 9.5rem;
+    padding-top: 3rem;
+  }
+  
+  @media (max-width: 768px) {
+    .choice__text{
+      left: auto;
+      text-align: center;
+      width: 36%;
+      padding-top: 3rem;
+    }
+  }
+  
+  .choice__container.selected {
+    background-color: map-get(colors.$background-white, "background");
+  }
