@@ -1,0 +1,70 @@
+@use "../abstracts/mixins";
+@use "../abstracts/colors";
+
+
+// a:link, a:visited {
+//     color: #000000;
+//     text-decoration: none;
+//     }
+
+/* Dropdown Button */
+.dropbtn {
+  
+    border: none;
+    cursor: pointer;
+    border-radius: 80%;
+    height: 14rem;
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    border: #000000 solid 0.5rem;
+    transition:  all 0.3s ease-in-out;
+    color: white;
+  }
+  
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 15px;
+    z-index: 2;
+    color: white;
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    background: map-get(colors.$dark-grey, "background");
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0px; /* added */
+    border: black 3px solid;
+    border-radius: 10%;
+    gap: 4rem;
+    //color: map-get(colors.$gold, "color");
+    color: white;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: map-get(colors.$gold, "color");
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid black; /* added */
+    transition:  all 0.3s ease-in-out;
+    color: white;
+  
+  }
+  
+
+  
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display: block;
+  }

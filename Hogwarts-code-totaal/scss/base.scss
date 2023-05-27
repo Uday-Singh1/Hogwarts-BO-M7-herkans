@@ -1,0 +1,136 @@
+@use './abstracts/mixins';
+@use './abstracts/colors';
+
+
+a:link, a:visited {
+    color: #000000;
+    text-decoration: none;
+    }
+ 
+
+body {
+    background: url('/img/hogwarts-3.webp') center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mixins.fontPlayfair;
+   
+}
+
+main{
+    width: 100%;
+    z-index: -1;
+  
+}
+
+img{
+    width: 100%;
+}
+
+
+
+input{
+    display: flex;
+    justify-content: center;
+    height:5rem;
+    width: 27rem;
+    align-items: center;
+    margin: auto;
+    margin-top: 4.8rem;
+    
+    
+}
+input::placeholder{
+    align-items: center;
+    margin-top: 7rem;
+    height: 5rem;
+    width: 60%;
+    font-size: 15px;
+}
+
+
+
+
+.start__button {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 20rem;
+    height: 4rem;
+    background-color: #F4C05D;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    z-index: 1;
+    @include mixins.fontPlayfair;
+    font-size: 2.5rem;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .start__button:hover {
+    background-color: #F4C05D;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+
+.start__button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+.difficulty-menu {
+  max-width: 40rem;
+  margin: auto;
+  height: 40rem;
+  background-color: #f2f2f2;
+  background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperboat.com%2Fhogwarts-wallpapers&psig=AOvVaw2_BnAGkt5b-luRZ4Eb8aIo&ust=1682776468816000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLiuy4HdzP4CFQAAAAAdAAAAABAU");
+  border: 1rem solid #604d8a;
+  padding: 1rem;
+  text-align: center;
+  background: #f4c05d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30rem;
+}
+
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.875rem;
+    background: linear-gradient(#604d8a, #f4c05d);
+    border-radius: 0.25rem;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.25rem;
+    margin-top: 15rem;
+    margin-left: 1rem;
+
+    &:after {
+        content: '▶️';
+        display: inline-block;
+        color: #604d8a;
+        font-family: 'FontAwesome';
+        padding: 0.5rem;
+        border-radius: 50%;
+        height: 1.25rem;
+        width: 1.25rem;
+        margin-left: 0.56250rem;
+        padding-left: 0.28125rem;
+        padding-right: 0.3125rem;
+    }
+
+    &.playing {
+        &:after {
+            padding: 0.4375rem;
+            content: '⏸️';
+        }
+    }
+}
+
+
+
+

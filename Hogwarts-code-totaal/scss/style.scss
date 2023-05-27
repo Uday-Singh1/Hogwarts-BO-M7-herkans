@@ -1,0 +1,21 @@
+@use "../scss/abstracts/mediaqueries";
+@use "../scss/abstracts/animation";
+@use "../scss/abstracts/colors";
+@use "../scss/abstracts/mixins";
+@use "../scss/abstracts/reset";
+
+
+@use "./components/Avatar/avatar.scss";
+@use "./components/header.scss";
+@use "./components/container.scss";
+@use "./components/logo.scss";
+@use "./components/texts.scss";
+@use "./components/Button/button.scss";
+@use "./components/Circle/circle.scss";
+@use "./components/heading/heading.scss";
+@use "./components/main/main.scss";
+@use "./components/slider.scss";
+@use "./components/dropdown.scss";
+@use "./components/Avatar-custom/custom-av.scss";
+@use "./components/Button/button-av.scss";
+@use "base.scss";

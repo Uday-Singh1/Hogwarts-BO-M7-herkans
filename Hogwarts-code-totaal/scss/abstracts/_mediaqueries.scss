@@ -1,0 +1,648 @@
+@use "./mixins";
+@media  screen and (max-width: 1000px) {
+
+    .main__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100%;
+        z-index: 1;
+        position: absolute;
+
+    
+    }
+    
+    .main__container-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#462F79;
+        max-height: 70rem;
+        max-width: 60rem;
+        text-align: center;
+        flex-direction: column;
+        font-size: 4rem;
+        padding-top: 3rem;
+       color: rgb(255, 255, 0);
+        
+
+       &__container-1:hover{
+        opacity: 85%;
+        transition: 0.5s;
+        cursor: pointer;
+       }
+    }
+    
+    
+    .main__container-2 {
+        background-color:#c3c3c3;
+        max-height: 30rem;
+        max-width: 40rem; 
+        text-align: center;
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    
+    input{
+        align-items: center;
+        margin-top: 7rem;
+        height: 5rem;
+        width: 60%;
+    }
+    
+    img{
+        width: 200%;
+     
+    
+    
+}
+
+}
+
+
+@media screen and (max-width: 62.5rem) {
+    body {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+        url("/img/hogwarts-3-copy.webp") center center fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+      width: 100%;
+    }
+  
+    h1 {
+      color: #e7e0d3;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8rem;
+      font-size: 60px;
+      z-index: 1;
+      transition: background-size 400ms;
+    }
+  
+    h2:hover {
+      background-size: 0 0.1em, 100% 0.1em;
+    }
+  
+    main {
+      width: 100%;
+      z-index: -1;
+    }
+  
+    .circles {
+      justify-content: center;
+      gap: 2rem;
+      padding-top: 6rem;
+      max-width: 100vw;
+  
+      .circle {
+        background: #000000;
+        border: #f4c05d solid 1.5rem;
+        border-radius: 90%;
+        height: 15rem;
+        width: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 10rem;
+        left: 2rem;
+        transition: all 0.3s ease-in-out;
+        flex-wrap: wrap;
+      }
+  
+      .circle:hover {
+        cursor: pointer;
+        transition: 0.3s;
+        transform: scale(1.1);
+      }
+  
+      .random-circles {
+        display: flex;
+        justify-content: center;
+        gap: 7rem;
+        padding-top: 8rem;
+        max-width: 100vw;
+      }
+  
+      .random__circle-1 {
+        background: #000000;
+        border: #f4c05d solid 1.5rem;
+        border-radius: 90%;
+        height: 25rem;
+        aspect-ratio: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 10rem;
+        left: 2rem;
+      }
+  
+      .random__circle-1:hover {
+        cursor: pointer;
+        transition: 0.3s;
+        transform: scale(1.1);
+      }
+  
+      .Proceed__Button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20rem;
+        margin-left: 84.5rem;
+        width: 23rem;
+        height: 7rem;
+        font-size: 3rem;
+        background-color: #f4c05d;
+        border: none;
+        border-radius: 0.8rem;
+        z-index: 1;
+        cursor: pointer;
+        opacity: 1;
+        transition: 0.3s;
+        transition: all 0.3s ease-in-out;
+      }
+  
+      .Proceed__Button:hover {
+        background-color: #f4c05d;
+        transition: 0.3s;
+        transform: scale(1.1);
+      }
+    }
+  }
+  
+
+  /* styling for tablet devices */
+@media only screen and (max-width: 187.5rem) {
+  .btn {
+      padding: 1.25rem;
+      font-size: 0.875rem;
+      margin-top: 80rem;
+  }
+  
+}
+
+/* styling for phone devices */
+@media only screen and (max-width: 12.5rem) {
+  .btn {
+      padding: 1rem;
+      font-size: 0.75rem;
+      margin-top: 15rem;
+      margin-left: 0.5rem;
+  }
+
+
+
+  :after {
+      margin-left: 0.3125rem;
+      padding: 0.375rem;
+      height: 1rem;
+      width: 1rem;
+  }
+
+  .playing {
+      :after {
+          padding: 0.3125rem;
+          content: '⏸️';
+      }
+  }
+
+}
+
+
+@media screen and (min-width: 36rem) {
+  /* For tablets */
+  .difficulty-menu {
+    max-width: 50rem;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  /* For desktops */
+  .difficulty-menu {
+    max-width: 70rem;
+  }
+}
+
+.difficulty-menu h2 {
+  margin-top: 0;
+}
+
+.difficulty-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.difficulty-menu li {
+  margin: 0.5rem 0;
+}
+
+.difficulty-menu a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #604d8a;
+  border: 1.5rem solid #604d8a;
+}
+
+.difficulty-menu a:hover {
+  background-color: #ddd;
+}
+
+
+
+
+@media  screen and (max-width: 1000px) {
+
+  .main__container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-height: 100%;
+      z-index: 1;
+      position: absolute;
+
+  
+  }
+  
+  .main__container-1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:#462F79;
+      max-height: 70rem;
+      max-width: 60rem;
+      text-align: center;
+      flex-direction: column;
+      font-size: 4rem;
+      padding-top: 3rem;
+     color: rgb(255, 255, 0);
+      
+
+     &__container-1:hover{
+      opacity: 85%;
+      transition: 0.5s;
+      cursor: pointer;
+     }
+  }
+  
+  
+  .main__container-2 {
+      background-color:#c3c3c3;
+      max-height: 30rem;
+      max-width: 40rem; 
+      text-align: center;
+      padding-top: 20px;
+      font-size: 30px;
+  }
+  
+  input{
+      align-items: center;
+      margin-top: 7rem;
+      height: 5rem;
+      width: 60%;
+  }
+  
+  img{
+      width: 200%;
+   
+  
+  
+}
+
+}
+
+
+@media screen and (max-width: 62.5rem) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+      url("/img/hogwarts-3-copy.webp") center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  h1 {
+    color: #e7e0d3;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    font-size: 60px;
+    z-index: 1;
+    transition: background-size 400ms;
+  }
+
+  h2:hover {
+    background-size: 0 0.1em, 100% 0.1em;
+  }
+
+  main {
+    width: 100%;
+    z-index: -1;
+  }
+
+  .circles {
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 6rem;
+    max-width: 100vw;
+
+    .circle {
+      background: #000000;
+      border: #f4c05d solid 1.5rem;
+      border-radius: 90%;
+      height: 15rem;
+      width: 15rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 10rem;
+      left: 2rem;
+      transition: all 0.3s ease-in-out;
+      flex-wrap: wrap;
+    }
+
+    .circle:hover {
+      cursor: pointer;
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
+
+    .random-circles {
+      display: flex;
+      justify-content: center;
+      gap: 7rem;
+      padding-top: 8rem;
+      max-width: 100vw;
+    }
+
+    .random__circle-1 {
+      background: #000000;
+      border: #f4c05d solid 1.5rem;
+      border-radius: 90%;
+      height: 25rem;
+      aspect-ratio: 1/1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 10rem;
+      left: 2rem;
+    }
+
+    .random__circle-1:hover {
+      cursor: pointer;
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
+
+    .Proceed__Button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20rem;
+      margin-left: 84.5rem;
+      width: 23rem;
+      height: 7rem;
+      font-size: 3rem;
+      background-color: #f4c05d;
+      border: none;
+      border-radius: 0.8rem;
+      z-index: 1;
+      cursor: pointer;
+      opacity: 1;
+      transition: 0.3s;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .Proceed__Button:hover {
+      background-color: #f4c05d;
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
+  }
+}
+
+
+/* styling for tablet devices */
+@media only screen and (max-width: 187.5rem) {
+.btn {
+    padding: 1.25rem;
+    font-size: 0.875rem;
+    margin-top: 80rem;
+}
+
+}
+
+/* styling for phone devices */
+@media only screen and (max-width: 12.5rem) {
+.btn {
+    padding: 1rem;
+    font-size: 0.75rem;
+    margin-top: 15rem;
+    margin-left: 0.5rem;
+}
+
+
+
+:after {
+    margin-left: 0.3125rem;
+    padding: 0.375rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+.playing {
+    :after {
+        padding: 0.3125rem;
+        content: '⏸️';
+    }
+}
+
+}
+
+
+@media screen and (min-width: 36rem) {
+/* For tablets */
+.difficulty-menu {
+  max-width: 50rem;
+}
+}
+
+@media screen and (min-width: 62rem) {
+/* For desktops */
+.difficulty-menu {
+  max-width: 70rem;
+}
+}
+
+.difficulty-menu h2 {
+margin-top: 0;
+}
+
+.difficulty-menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.difficulty-menu li {
+margin: 0.5rem 0;
+}
+
+.difficulty-menu a {
+display: block;
+padding: 0.5rem;
+text-decoration: none;
+color: #604d8a;
+border: 1.5rem solid #604d8a;
+}
+
+.difficulty-menu a:hover {
+background-color: #ddd;
+}
+
+
+/* For phones */
+@media (max-width: 576px) {
+.avatar-frame {
+  height: 6rem;
+  width: 6rem;
+}
+
+.Proceed__Button {
+  margin-top: 10rem;
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.5rem;
+}
+
+.circles, .random-circles {
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.circle, .random__circle-1 {
+  height: 8rem;
+  width: 8rem;
+  top: 5rem;
+  left: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+
+}
+
+/* For tablets */
+@media (max-width: 62rem) {
+.avatar-frame {
+  height: 8rem;
+  width: 8rem;
+}
+
+.Proceed__Button {
+  margin-top: 15rem;
+  width: 20rem;
+  height: 8rem;
+  font-size: 2rem;
+}
+
+.circles, .random-circles {
+  gap: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.circle, .random__circle-1 {
+  height: 10rem;
+  width: 10rem;
+  top: 8rem;
+  left: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 10rem;
+}
+}
+
+/* For desktop */
+@media (min-width: 62rem) {
+body {
+  height: 100vh;
+}
+
+.avatar-frame {
+  height: 12rem;
+  width: 12rem;
+}
+
+.Proceed__Button {
+  margin-top: 20rem;
+  width: 25rem;
+  height: 10rem;
+  font-size: 3rem;
+}
+
+.circles, .random-circles {
+  gap: 7rem;
+  flex-wrap: nowrap;
+  margin: 1rem;
+}
+
+.circle, .random__circle-1 {
+  height: 15rem;
+  width: 15rem;
+  top: 10rem;
+  left: 2rem;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 8rem;
+}
+
+
+
+}
+
+@media screen and (max-width: 62.5rem){
+  .avatar-canvas {
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    top: 20rem;
+    margin-left: 7rem;
+    background-color: purple;
+    border-radius: 50%;
+    @include mixins.flexCenter;
+    
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    margin-left: -63rem;
+
+    @include mixins.flexCenter;
+  }
+  
+}
+
+//avatar

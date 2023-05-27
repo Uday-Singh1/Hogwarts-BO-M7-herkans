@@ -1,0 +1,98 @@
+{
+    "vraag 1": [
+        {
+            "logo": "fa-solid fa-1",
+            "volgendevraag":"volgendevraag",
+            "vraag": "Which ball in Quidditch is the largest??",
+            "antwoord": "",
+            "punten": 0
+        },
+        {
+            "vraag": "",
+            "antwoord": "The Bludger",
+            "punten": 0
+        },
+        {
+            "vraag": "",
+            "antwoord": "The Quaffle",
+            "punten": 0
+        },
+        {
+            "vraag": "",
+            "antwoord": "The Snitch",
+            "punten": 3
+        }
+    ],
+
+    "vraag 2": [
+        {
+            "logo": "fa-solid fa-2",
+            "volgendevraag":"volgendevraag",
+            "vraag": "The tale of the Three Brothers involves which magical artefacts?",
+            "antwoord": "",
+            "punten": 0
+        },
+        {
+            "vraag": "",
+            "antwoord": "The Founders’ relics",
+            "punten": 0
+        },
+        {
+            "vraag": "",
+            "antwoord": "The Deathly Hallows",
+            "punten": 5
+        },
+        {
+            "vraag": "",
+            "antwoord": "Horcruxes",
+            "punten": 0
+        }
+    ],
+
+    "vraag 3": [
+        {
+            "logo": "fa-solid fa-3",
+            "volgendevraag":"volgendevraag",
+            "vraag": "True of False: Polyjuice Potion allows the drinker to change species?",
+            "antwoord": "",
+            "punten": 0
+        },
+        {
+            "vraag": "",
+            "antwoord": "True",
+            "punten": 0
+        },
+        {
+            "vraag": "",
+            "antwoord": "False",
+            "punten": 5
+        }
+        
+    ],
+
+    "vraag 4": [
+        {
+            "logo": "fa-solid fa-4",
+            "volgendevraag":"volgendevraag",
+            "vraag": "Emetic the Evil was killed in a duel against who?",
+            "antwoord": "",
+            "punten":0
+        },
+        {
+            "vraag": "",
+            "antwoord": "Egbert the Egregious",
+            "punten": 5
+        },
+        {
+            "vraag": "",
+            "antwoord": "Sir Agravaine",
+            "punten": 0
+        },
+        {
+            "vraag": "",
+            "antwoord": "Beatrix Bloxam",
+            "punten": 0
+        }
+        
+    ]
+}

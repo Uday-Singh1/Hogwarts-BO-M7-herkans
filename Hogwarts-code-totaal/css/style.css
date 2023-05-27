@@ -1,0 +1,1291 @@
+@charset "UTF-8";
+@media screen and (max-width: 1000px) {
+  .main__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+  .main__container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #462F79;
+    max-height: 70rem;
+    max-width: 60rem;
+    text-align: center;
+    flex-direction: column;
+    font-size: 4rem;
+    padding-top: 3rem;
+    color: rgb(255, 255, 0);
+  }
+  .main__container-1__container-1:hover {
+    opacity: 85%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .main__container-2 {
+    background-color: #c3c3c3;
+    max-height: 30rem;
+    max-width: 40rem;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  input {
+    align-items: center;
+    margin-top: 7rem;
+    height: 5rem;
+    width: 60%;
+  }
+  img {
+    width: 200%;
+  }
+}
+@media screen and (max-width: 62.5rem) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("/img/hogwarts-3-copy.webp") center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+  }
+  h1 {
+    color: #e7e0d3;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    font-size: 60px;
+    z-index: 1;
+    transition: background-size 400ms;
+  }
+  h2:hover {
+    background-size: 0 0.1em, 100% 0.1em;
+  }
+  main {
+    width: 100%;
+    z-index: -1;
+  }
+  .circles {
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 6rem;
+    max-width: 100vw;
+  }
+  .circles .circle {
+    background: #000000;
+    border: #f4c05d solid 1.5rem;
+    border-radius: 90%;
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10rem;
+    left: 2rem;
+    transition: all 0.3s ease-in-out;
+    flex-wrap: wrap;
+  }
+  .circles .circle:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  .circles .random-circles {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    padding-top: 8rem;
+    max-width: 100vw;
+  }
+  .circles .random__circle-1 {
+    background: #000000;
+    border: #f4c05d solid 1.5rem;
+    border-radius: 90%;
+    height: 25rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10rem;
+    left: 2rem;
+  }
+  .circles .random__circle-1:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  .circles .Proceed__Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+    margin-left: 84.5rem;
+    width: 23rem;
+    height: 7rem;
+    font-size: 3rem;
+    background-color: #f4c05d;
+    border: none;
+    border-radius: 0.8rem;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
+  }
+  .circles .Proceed__Button:hover {
+    background-color: #f4c05d;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+}
+/* styling for tablet devices */
+@media only screen and (max-width: 187.5rem) {
+  .btn {
+    padding: 1.25rem;
+    font-size: 0.875rem;
+    margin-top: 80rem;
+  }
+}
+/* styling for phone devices */
+@media only screen and (max-width: 12.5rem) {
+  .btn {
+    padding: 1rem;
+    font-size: 0.75rem;
+    margin-top: 15rem;
+    margin-left: 0.5rem;
+  }
+  :after {
+    margin-left: 0.3125rem;
+    padding: 0.375rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  .playing :after {
+    padding: 0.3125rem;
+    content: "⏸️";
+  }
+}
+@media screen and (min-width: 36rem) {
+  /* For tablets */
+  .difficulty-menu {
+    max-width: 50rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  /* For desktops */
+  .difficulty-menu {
+    max-width: 70rem;
+  }
+}
+.difficulty-menu h2 {
+  margin-top: 0;
+}
+
+.difficulty-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.difficulty-menu li {
+  margin: 0.5rem 0;
+}
+
+.difficulty-menu a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #604d8a;
+  border: 1.5rem solid #604d8a;
+}
+
+.difficulty-menu a:hover {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 1000px) {
+  .main__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+  .main__container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #462F79;
+    max-height: 70rem;
+    max-width: 60rem;
+    text-align: center;
+    flex-direction: column;
+    font-size: 4rem;
+    padding-top: 3rem;
+    color: rgb(255, 255, 0);
+  }
+  .main__container-1__container-1:hover {
+    opacity: 85%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .main__container-2 {
+    background-color: #c3c3c3;
+    max-height: 30rem;
+    max-width: 40rem;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  input {
+    align-items: center;
+    margin-top: 7rem;
+    height: 5rem;
+    width: 60%;
+  }
+  img {
+    width: 200%;
+  }
+}
+@media screen and (max-width: 62.5rem) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("/img/hogwarts-3-copy.webp") center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+  }
+  h1 {
+    color: #e7e0d3;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    font-size: 60px;
+    z-index: 1;
+    transition: background-size 400ms;
+  }
+  h2:hover {
+    background-size: 0 0.1em, 100% 0.1em;
+  }
+  main {
+    width: 100%;
+    z-index: -1;
+  }
+  .circles {
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 6rem;
+    max-width: 100vw;
+  }
+  .circles .circle {
+    background: #000000;
+    border: #f4c05d solid 1.5rem;
+    border-radius: 90%;
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10rem;
+    left: 2rem;
+    transition: all 0.3s ease-in-out;
+    flex-wrap: wrap;
+  }
+  .circles .circle:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  .circles .random-circles {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    padding-top: 8rem;
+    max-width: 100vw;
+  }
+  .circles .random__circle-1 {
+    background: #000000;
+    border: #f4c05d solid 1.5rem;
+    border-radius: 90%;
+    height: 25rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10rem;
+    left: 2rem;
+  }
+  .circles .random__circle-1:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  .circles .Proceed__Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+    margin-left: 84.5rem;
+    width: 23rem;
+    height: 7rem;
+    font-size: 3rem;
+    background-color: #f4c05d;
+    border: none;
+    border-radius: 0.8rem;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
+  }
+  .circles .Proceed__Button:hover {
+    background-color: #f4c05d;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+}
+/* styling for tablet devices */
+@media only screen and (max-width: 187.5rem) {
+  .btn {
+    padding: 1.25rem;
+    font-size: 0.875rem;
+    margin-top: 80rem;
+  }
+}
+/* styling for phone devices */
+@media only screen and (max-width: 12.5rem) {
+  .btn {
+    padding: 1rem;
+    font-size: 0.75rem;
+    margin-top: 15rem;
+    margin-left: 0.5rem;
+  }
+  :after {
+    margin-left: 0.3125rem;
+    padding: 0.375rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  .playing :after {
+    padding: 0.3125rem;
+    content: "⏸️";
+  }
+}
+@media screen and (min-width: 36rem) {
+  /* For tablets */
+  .difficulty-menu {
+    max-width: 50rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  /* For desktops */
+  .difficulty-menu {
+    max-width: 70rem;
+  }
+}
+.difficulty-menu h2 {
+  margin-top: 0;
+}
+
+.difficulty-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.difficulty-menu li {
+  margin: 0.5rem 0;
+}
+
+.difficulty-menu a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #604d8a;
+  border: 1.5rem solid #604d8a;
+}
+
+.difficulty-menu a:hover {
+  background-color: #ddd;
+}
+
+/* For phones */
+@media (max-width: 576px) {
+  .avatar-frame {
+    height: 6rem;
+    width: 6rem;
+  }
+  .Proceed__Button {
+    margin-top: 10rem;
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+  }
+  .circles, .random-circles {
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .circle, .random__circle-1 {
+    height: 8rem;
+    width: 8rem;
+    top: 5rem;
+    left: 0;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+}
+/* For tablets */
+@media (max-width: 62rem) {
+  .avatar-frame {
+    height: 8rem;
+    width: 8rem;
+  }
+  .Proceed__Button {
+    margin-top: 15rem;
+    width: 20rem;
+    height: 8rem;
+    font-size: 2rem;
+  }
+  .circles, .random-circles {
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  .circle, .random__circle-1 {
+    height: 10rem;
+    width: 10rem;
+    top: 8rem;
+    left: 0;
+  }
+  h1 {
+    font-size: 4rem;
+    margin-top: 10rem;
+  }
+}
+/* For desktop */
+@media (min-width: 62rem) {
+  body {
+    height: 100vh;
+  }
+  .avatar-frame {
+    height: 12rem;
+    width: 12rem;
+  }
+  .Proceed__Button {
+    margin-top: 20rem;
+    width: 25rem;
+    height: 10rem;
+    font-size: 3rem;
+  }
+  .circles, .random-circles {
+    gap: 7rem;
+    flex-wrap: nowrap;
+    margin: 1rem;
+  }
+  .circle, .random__circle-1 {
+    height: 15rem;
+    width: 15rem;
+    top: 10rem;
+    left: 2rem;
+  }
+  h1 {
+    font-size: 6rem;
+    margin-top: 8rem;
+  }
+}
+@media screen and (max-width: 62.5rem) {
+  .avatar-canvas {
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    top: 20rem;
+    margin-left: 7rem;
+    background-color: purple;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    margin-left: -63rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.hg__logo:hover {
+  transform: scale(1.2);
+}
+
+.main__name:hover,
+.main__name:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+.main__name {
+  transition: background-size 400ms;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  transform: scale(1.05);
+}
+
+.dropdown-content a:hover {
+  color: white;
+  transform: scale(1.02);
+}
+
+.dropdown-content a:nth-of-type(3) {
+  border-bottom: none;
+}
+
+/* Toon het dropdown-menu met een fade-in animatie */
+.dropdown-content.show {
+  animation: fadeIn 0.5s ease forwards;
+  color: white;
+}
+
+/* Definieer de fadeIn animatie */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.volume-button:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
+.volume-slider {
+  -webkit-appearance: none;
+  width: 0;
+  transition: width 0.2s ease;
+}
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  transition: margin-top 0.2s ease;
+  margin-top: -0.205rem;
+}
+.volume-slider.active {
+  width: 6.25rem;
+}
+
+.volume-slider:not(.active)::-webkit-slider-thumb {
+  width: 0;
+}
+
+.buttonWrapper__quest:hover {
+  cursor: pointer;
+  transition: 3s;
+  color: white;
+}
+
+.previous-question:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: white;
+  border-radius: 10%;
+}
+
+.next-question:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: white;
+  border-radius: 10%;
+}
+
+.button_eye:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.4s;
+}
+
+.button_mouth:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.4s;
+}
+
+.button_nose:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.4s;
+}
+
+.button_next:hover {
+  cursor: pointer;
+  color: white;
+  border-radius: 1rem 1rem 1rem 1rem;
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+.button_previous:hover {
+  cursor: pointer;
+  color: white;
+  border-radius: 1rem 1rem 1rem 1rem;
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.5rem;
+}
+
+.avatar-frame {
+  border-radius: 80%;
+  display: flex;
+  height: 12rem;
+  width: 12rem;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
+.main__container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #604d8a;
+  height: 70rem;
+  width: 60rem;
+  text-align: center;
+  flex-direction: column;
+  font-size: 4rem;
+  padding-top: 3rem;
+  color: #F4C05D;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: inset black 0.2rem;
+}
+
+.main__container-1:hover {
+  background-color: rgba(96, 77, 138, 0.8);
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.main__container-2 {
+  background-color: #462F79;
+  height: 26rem;
+  width: 46rem;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+  border-radius: 0.9rem;
+}
+
+.main__container__quest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+  height: 60rem;
+  background-color: #462F79;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5%;
+  flex-direction: column;
+}
+
+.questions__title {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  height: 0rem;
+  padding-top: 3rem;
+  justify-content: center;
+  position: absolute;
+  left: 35%;
+  text-align: center;
+  display: flex;
+  color: #ffd700;
+}
+
+.question-name {
+  display: flex;
+  height: 17rem;
+  padding-top: 10rem;
+  color: #ffffff;
+  z-index: 1000;
+  font-size: 2rem;
+  padding-left: 5rem;
+}
+
+.choice__container__quest {
+  display: flex;
+  margin-bottom: 0.9rem;
+  margin-left: 5rem;
+  width: 80%;
+  font-size: 1.8rem;
+  background-color: #604d8a;
+  color: #ffe600;
+}
+
+.choice__prefix {
+  border: none;
+  padding: 1.5rem 3.5rem;
+  background: #ffd700;
+  height: 8rem;
+  width: 3rem;
+  padding-left: 2rem;
+  display: flex;
+}
+
+.choice__text {
+  position: absolute;
+  left: 7rem;
+  padding-top: 3rem;
+}
+
+.buttonWrapper__quest {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-left: 35rem;
+  margin-right: 35rem;
+  z-index: 100;
+  gap: 15rem;
+}
+
+.previous-question {
+  cursor: pointer;
+  border: none;
+  height: 5rem;
+  width: 9rem;
+  position: absolute;
+  left: 20rem;
+  background-color: #ffd700;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+.next-question {
+  cursor: pointer;
+  border: none;
+  height: 5rem;
+  width: 9rem;
+  position: absolute;
+  right: 20rem;
+  background-color: #ffd700;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+.hg__logo__button {
+  background: none;
+  border: none;
+}
+
+.hg__logo {
+  display: flex;
+  height: 13rem;
+  width: 13rem;
+  transition: all 0.3s ease-in-out;
+}
+
+label {
+  font-family: "Playfair Display", serif;
+}
+
+.main__name {
+  padding-bottom: 14rem;
+  font-size: 5rem;
+  justify-content: space-between;
+  font-family: "Playfair Display", serif;
+  background: linear-gradient(to right, rgb(255, 0, 0), rgb(76, 106, 42), rgb(234, 218, 129), rgb(0, 100, 200));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-repeat: no-repeat;
+}
+
+.img-buttons {
+  border: none;
+  background-color: rgba(255, 0, 0, 0);
+  cursor: pointer;
+}
+
+.button__Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Proceed__Button {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem;
+  position: relative;
+  left: 25rem;
+  width: 25rem;
+  height: 10rem;
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  background-color: #f4c05d;
+  border: none;
+  border-radius: 0.8rem;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
+}
+
+.Proceed__Button:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.Secondary__Button {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 45rem;
+  width: 25rem;
+  margin-bottom: 11rem;
+  height: 10rem;
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  background-color: #f4c05d;
+  border: none;
+  border-radius: 0.8rem;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
+}
+
+.Secondary__Button:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+  transition: 0.3s;
+  margin: 1rem;
+}
+
+.circle {
+  background: #f4c05d;
+  border-radius: 90%;
+  height: 15rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10rem;
+  left: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.circle:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.random-circles {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  padding-top: 1rem;
+  max-width: 100%;
+  margin: 1rem;
+}
+
+.random__circle-1 {
+  border-radius: 90%;
+  height: 15rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10rem;
+  left: 2rem;
+  background: #676767;
+  transition: all 0.3s ease-in-out;
+}
+.random__circle-1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  color: #e7e0d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  font-size: 60px;
+  z-index: 1;
+}
+
+main {
+  width: 100%;
+  z-index: -1;
+}
+
+.volume-slider {
+  width: 1;
+  height: 0.5135rem;
+  border-radius: 0.3125rem;
+}
+.volume-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  border: none;
+  cursor: pointer;
+  border-radius: 80%;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  border: #000000 solid 0.5rem;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  top: 15px;
+  z-index: 2;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  background: #201e1e;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0px; /* added */
+  border: black 3px solid;
+  border-radius: 10%;
+  gap: 4rem;
+  color: white;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid black; /* added */
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("../img/hogwarts-3-copy.webp") center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.avatar-canvas {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  background-color: purple;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-picker {
+  margin-top: 25rem;
+  width: 90%;
+  max-width: 20rem;
+  height: 3rem;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 1rem;
+  gap: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_eye {
+  background: #F4C05D;
+  border: 1px black solid;
+  height: 6rem;
+  width: 34rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 365%;
+}
+
+.button_mouth {
+  background: #F4C05D;
+  border: 1px black solid;
+  height: 6rem;
+  width: 34rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 365%;
+}
+
+.button_nose {
+  background: #F4C05D;
+  border: 1px black solid;
+  height: 6rem;
+  width: 34rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 365%;
+}
+
+.navigation-container {
+  display: flex;
+  gap: 5rem;
+  position: relative;
+  top: 10rem;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_next {
+  cursor: pointer;
+  background-color: rgb(75, 35, 75);
+  color: #F4C05D;
+  border: none;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.button_previous {
+  cursor: pointer;
+  background-color: rgb(75, 35, 75);
+  color: #F4C05D;
+  border: none;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+a:link, a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+body {
+  background: url("/img/hogwarts-3.webp") center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Playfair Display", serif;
+}
+
+main {
+  width: 100%;
+  z-index: -1;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  width: 27rem;
+  align-items: center;
+  margin: auto;
+  margin-top: 4.8rem;
+}
+
+input::placeholder {
+  align-items: center;
+  margin-top: 7rem;
+  height: 5rem;
+  width: 60%;
+  font-size: 15px;
+}
+
+.start__button {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 20rem;
+  height: 4rem;
+  background-color: #F4C05D;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  z-index: 1;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.start__button:hover {
+  background-color: #F4C05D;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.start__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.difficulty-menu {
+  max-width: 40rem;
+  margin: auto;
+  height: 40rem;
+  background-color: #f2f2f2;
+  background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperboat.com%2Fhogwarts-wallpapers&psig=AOvVaw2_BnAGkt5b-luRZ4Eb8aIo&ust=1682776468816000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLiuy4HdzP4CFQAAAAAdAAAAABAU");
+  border: 1rem solid #604d8a;
+  padding: 1rem;
+  text-align: center;
+  background: #f4c05d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30rem;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 1.875rem;
+  background: linear-gradient(#604d8a, #f4c05d);
+  border-radius: 0.25rem;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.25rem;
+  margin-top: 15rem;
+  margin-left: 1rem;
+}
+.btn:after {
+  content: "▶️";
+  display: inline-block;
+  color: #604d8a;
+  font-family: "FontAwesome";
+  padding: 0.5rem;
+  border-radius: 50%;
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-left: 0.5625rem;
+  padding-left: 0.28125rem;
+  padding-right: 0.3125rem;
+}
+.btn.playing:after {
+  padding: 0.4375rem;
+  content: "⏸️";
+}
+
+/*# sourceMappingURL=style.css.map */

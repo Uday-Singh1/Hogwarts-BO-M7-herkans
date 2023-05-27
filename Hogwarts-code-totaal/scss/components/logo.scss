@@ -1,0 +1,14 @@
+@use '../abstracts/mixins';
+@use '../abstracts/colors';
+
+
+.hg__logo__button{
+    background: none;
+    border: none;
+}
+.hg__logo{
+    display: flex;
+    height: 13rem;
+    width: 13rem;
+    transition: all 0.3s ease-in-out;
+}

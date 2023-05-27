@@ -1,0 +1,184 @@
+// .color-picker {
+//     margin-top: 10px;
+//   }
+  
+//   .buttons-wrapper{
+//     display: flex;
+//     flex-direction: column;
+//     height: 12.5rem;
+//     position: relative;
+//     align-items: center;
+//     justify-content: center;
+//     top: 11rem;
+//     gap: 1rem;
+//     width: 10rem;
+//   }
+  
+//   .button-container button {
+//     margin-top: 5px;
+//     color: rgb(255, 255, 255);
+//   }
+  
+//   .color-picker{
+//     display: flex;
+//     width: 10rem;
+//     height: 4rem;
+//     position: relative;
+//     top: 10rem;
+//     align-items: center;
+//     justify-content: center;
+    
+//   }
+//   .button_eye{
+//     cursor: pointer;
+//     background: #F4C05D;
+//     border: 1px black solid;
+//     height: 3rem;
+    
+//   }
+
+//   .button_mouth{
+//     cursor: pointer;
+//     background: #F4C05D;
+//     border: 1px black solid;
+//     height: 3rem;
+//   }
+
+//   .button_nose{
+//     cursor: pointer;
+//     background: #F4C05D;
+//     border: 1px black solid;
+//     height: 3rem;
+//     gap: 1rem;
+//   }
+
+
+
+@use "../../abstracts/mixins";
+
+.body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('../img/hogwarts-3-copy.webp') center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.avatar-canvas {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  // align-items: center;
+  // justify-content: center;
+  // width: 25rem;
+  // height: 25rem;
+  // position: relative;
+  // top: 20rem;
+  // margin-left: 9rem;
+  // max-width: 40rem;
+  background-color: purple;
+  border-radius: 50%;
+  @include mixins.flexCenter;
+  
+}
+
+.color-picker {
+  margin-top: 25rem;
+  width: 90%;
+  max-width: 20rem;
+  height: 3rem;
+  
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 1rem;
+  gap: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  @include mixins.flexCenter;
+}
+
+.button-container button {
+  color: rgb(255, 255, 255);
+  @include mixins.flexCenter;
+}
+
+
+
+.button_eye {
+  background: #F4C05D;
+  border: 1px black solid;
+  height: 6rem;
+  width: 34rem;
+  @include mixins.flexCenter;
+  position: relative;
+  left: 365%;
+
+}
+
+.button_mouth {
+  background: #F4C05D;
+  border: 1px black solid;
+  height: 6rem;
+  width: 34rem;
+  @include mixins.flexCenter;
+  position: relative;
+  left: 365%;
+
+}
+
+.button_nose {
+  background: #F4C05D;
+  border: 1px black solid;
+  height: 6rem;
+  width: 34rem;
+  @include mixins.flexCenter;
+  position: relative;
+  left: 365%;
+
+}
+
+.navigation-container {
+  display: flex;
+  gap: 5rem;
+  position: relative;
+  top:10rem;
+  justify-content: center;
+  @include mixins.flexCenter;
+
+}
+
+.button_next {
+  cursor: pointer;
+  background-color: rgb(75, 35, 75);
+  color: #F4C05D; 
+  border: none;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 1rem  1rem 1rem 1rem;
+}
+
+.button_previous {
+  cursor: pointer;
+  background-color: rgb(75, 35, 75);
+  color: #F4C05D; 
+  border: none;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 1rem  1rem 1rem 1rem;
+}

@@ -1,0 +1,16 @@
+@use "../abstracts/colors";
+
+.volume-slider {
+    width: 1;
+    height: 0.5135rem;
+    border-radius: 0.3125rem;
+
+    &::-webkit-slider-thumb {
+        appearance: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+
+    }
+
+}
