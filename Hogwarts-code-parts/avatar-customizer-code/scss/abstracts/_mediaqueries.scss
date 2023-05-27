@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    .avatar-canvas {
+      width: 15rem;
+      height: 15rem;
+    }
+    
+    .color-picker,
+    .buttons-wrapper {
+      max-width: 15rem;
+    }
+  }

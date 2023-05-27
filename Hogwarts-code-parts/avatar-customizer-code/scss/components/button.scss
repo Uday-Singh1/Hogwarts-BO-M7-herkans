@@ -1,0 +1,113 @@
+// .color-picker {
+//     margin-top: 10px;
+//   }
+  
+//   .buttons-wrapper{
+//     display: flex;
+//     flex-direction: column;
+//     height: 12.5rem;
+//     position: relative;
+//     align-items: center;
+//     justify-content: center;
+//     top: 11rem;
+//     gap: 1rem;
+//     width: 10rem;
+//   }
+  
+//   .button-container button {
+//     margin-top: 5px;
+//     color: rgb(255, 255, 255);
+//   }
+  
+//   .color-picker{
+//     display: flex;
+//     width: 10rem;
+//     height: 4rem;
+//     position: relative;
+//     top: 10rem;
+//     align-items: center;
+//     justify-content: center;
+    
+//   }
+//   .button_eye{
+//     cursor: pointer;
+//     background: #F4C05D;
+//     border: 1px black solid;
+//     height: 3rem;
+    
+//   }
+
+//   .button_mouth{
+//     cursor: pointer;
+//     background: #F4C05D;
+//     border: 1px black solid;
+//     height: 3rem;
+//   }
+
+//   .button_nose{
+//     cursor: pointer;
+//     background: #F4C05D;
+//     border: 1px black solid;
+//     height: 3rem;
+//     gap: 1rem;
+//   }
+
+
+.color-picker {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 20rem;
+    height: 3.2rem;
+  }
+  
+  .buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 20rem;
+  }
+  
+  .button-container button {
+    color: rgb(255, 255, 255);
+  }
+  
+  .button_eye,
+  .button_mouth,
+  .button_nose {
+    cursor: pointer;
+    background: #F4C05D;
+    border: 1px black solid;
+    height: 3rem;
+    width: 25rem;
+  }
+
+.navigation-container{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    top: 2rem;
+   
+}
+
+  .button_next{
+    cursor: pointer;
+    background-color: rgb(75, 35, 75);
+    color: #F4C05D; 
+    border: none;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 1rem  1rem 1rem 1rem;
+  }
+
+  .button_previous{
+    cursor: pointer;
+    background-color: rgb(75, 35, 75);
+    color: #F4C05D; 
+    border: none;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 1rem  1rem 1rem 1rem;
+  }

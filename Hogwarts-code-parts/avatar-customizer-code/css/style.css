@@ -1,0 +1,89 @@
+body {
+  background: url("../img/hogwarts-3-copy.webp") center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.avatar-canvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 20rem;
+  background-color: purple;
+  border-radius: 50%;
+}
+
+.color-picker {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  height: 3.2rem;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.button-container button {
+  color: rgb(255, 255, 255);
+}
+
+.button_eye,
+.button_mouth,
+.button_nose {
+  cursor: pointer;
+  background: #F4C05D;
+  border: 1px black solid;
+  height: 3rem;
+  width: 25rem;
+}
+
+.navigation-container {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  top: 2rem;
+}
+
+.button_next {
+  cursor: pointer;
+  background-color: rgb(75, 35, 75);
+  color: #F4C05D;
+  border: none;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.button_previous {
+  cursor: pointer;
+  background-color: rgb(75, 35, 75);
+  color: #F4C05D;
+  border: none;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

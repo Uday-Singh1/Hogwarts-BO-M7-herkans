@@ -1,0 +1,38 @@
+@use "../../abstracts/mixins";
+
+.img-buttons {
+  border: none;
+  background-color: #ff000000;
+  cursor: pointer;
+}
+
+.button__Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Proceed__Button {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem;
+  width: 25rem;
+  height: 10rem;
+  font-size: 3rem;
+  @include mixins.fontPlayfair;
+  background-color: #f4c05d;
+  border: none;
+  border-radius: 0.8rem;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
+}
+
+.Proceed__Button:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}

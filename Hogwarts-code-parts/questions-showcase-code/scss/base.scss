@@ -1,0 +1,12 @@
+@use "./abstracts/mixins";
+@use "./abstracts/colors";
+
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url('/img/hogwarts-3.webp') center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: map-get(colors.$black, "color");
+    overflow: hidden;
+    height: 100vh;
+}

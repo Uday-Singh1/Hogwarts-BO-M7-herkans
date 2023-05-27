@@ -1,0 +1,20 @@
+@use '../abstracts/mixins';
+@use '../abstracts/colors';
+
+
+.hg__logo:hover{
+    transform: scale(1.2);
+   
+}
+
+
+
+ .main__name:hover,
+ .main__name:focus {
+   background-size: 0 0.1em, 100% 0.1em;
+ }
+
+.main__name{
+    transition: background-size 400ms;
+
+}

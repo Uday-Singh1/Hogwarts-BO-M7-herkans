@@ -1,0 +1,10 @@
+@use "./abstracts/mediaqueries";
+@use "./abstracts/reset.scss";
+@use "./abstracts/mixins";
+@use "./abstracts/animation";
+
+@use "./base.scss";
+@use "./components/header.scss";
+@use "./components/container.scss";
+@use "./components/logo.scss";
+@use "./components/texts.scss";

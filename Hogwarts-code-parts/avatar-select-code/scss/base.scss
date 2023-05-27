@@ -1,0 +1,11 @@
+@use "./abstracts/reset";
+@use "./abstracts/mixins";
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url('../img/hogwarts-3-copy.webp') center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    overflow: hidden;
+    height: 100vh;
+}

@@ -1,0 +1,57 @@
+@use '../abstracts/mixins';
+@use '../abstracts/colors';
+
+
+
+.main__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+
+
+
+.main__container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:map-get(colors.$light-purp, "background");
+    height: 70rem;
+    width: 60rem;
+    text-align: center;
+    flex-direction: column;
+    font-size: 4rem;
+    padding-top: 3rem;
+   color: map-get(colors.$gold-color, "background");
+   border-radius: 20px;
+   transition: all 0.3s ease-in-out;
+   box-shadow: inset black 0.2rem;
+
+}
+
+
+.main__container-1:hover{
+    background-color: map-get(colors.$light-purp-hover, "background");
+    //background-color:rgba(70, 47, 121, 0.8);
+    transition: 0.3s;
+    transform: scale(1.1);
+    
+
+}
+
+
+.main__container-2 {
+    background-color: map-get(colors.$dark-purp, "background");
+    height: 26rem;
+    width: 46rem; 
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+    border-radius: 0.9rem;
+
+}

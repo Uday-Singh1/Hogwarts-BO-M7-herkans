@@ -1,0 +1,11 @@
+@mixin fontPlayfair{
+    font-family: 'Playfair Display', serif;
+}
+
+
+@mixin border-radius-all{
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+}

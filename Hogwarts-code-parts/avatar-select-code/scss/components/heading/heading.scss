@@ -1,0 +1,12 @@
+@use "../../abstracts/mixins";
+
+h1 {
+  @include mixins.fontPlayfair;
+  color: #e7e0d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  font-size: 60px;
+  z-index: 1;
+}

@@ -1,0 +1,28 @@
+@use '../abstracts/mixins';
+@use '../abstracts/colors';
+
+label{
+    @include mixins.fontPlayfair;
+}
+
+
+
+.main__name{
+    padding-bottom: 14rem;
+    font-size: 5rem;
+    justify-content: space-between;
+    @include mixins.fontPlayfair;
+    background:linear-gradient(to right, rgba(255, 0, 0, 1), rgba(76, 106, 42), rgb(234, 218, 129),  rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-repeat: no-repeat;
+    //transition: background-size 400ms;
+}
+
+
+
+// .main__name:hover,
+// .main__name:focus {
+//   background-size: 0 0.1em, 100% 0.1em;
+// }
+
+

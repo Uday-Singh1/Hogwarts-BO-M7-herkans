@@ -1,0 +1,39 @@
+@use "../abstracts/animation";
+
+
+// .avatar-canvas {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     top: 50%;
+//     left: 30%;
+//     width: 20rem;
+//     position: relative;
+//     top: 10rem;
+//     background-color: purple;
+//     border-radius: 50%;
+//   }
+
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: grid;
+    place-items: center;
+  }
+  
+  .avatar-canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    background-color: purple;
+    border-radius: 50%;
+  }

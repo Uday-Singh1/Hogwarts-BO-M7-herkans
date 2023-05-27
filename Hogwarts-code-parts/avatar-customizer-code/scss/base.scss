@@ -1,0 +1,13 @@
+@use "./abstracts/mixins";
+
+body {
+    background: url('../img/hogwarts-3-copy.webp') center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+//body {
+//    background: url('../img/hogwarts-3-copy.webp') center center fixed;
+//    z-index: 1;
+//}

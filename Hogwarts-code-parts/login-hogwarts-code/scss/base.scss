@@ -1,0 +1,81 @@
+@use './abstracts/mixins';
+@use './abstracts/colors';
+
+
+a:link, a:visited {
+   color: map-get(colors.$black, "color");
+    text-decoration: none;
+    }
+ 
+
+body {
+    background: url('/img/hogwarts-3.webp') center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mixins.fontPlayfair;
+
+}
+
+main{
+    width: 100%;
+    z-index: -1;
+  
+}
+
+img{
+    width: 100%;
+}
+
+
+input{
+    display: flex;
+    justify-content: center;
+    height:5rem;
+    width: 27rem;
+    align-items: center;
+    margin: auto;
+    margin-top: 4.8rem;
+    
+    
+}
+input::placeholder{
+    align-items: center;
+    margin-top: 7rem;
+    height: 5rem;
+    width: 60%;
+    font-size: 15px;
+}
+
+
+
+
+.start__button {
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    width: 20rem;
+    height: 4rem;
+    background-color: map-get(colors.$gold-color, "background");
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    z-index: 1;
+    @include mixins.fontPlayfair;
+    font-size: 2.5rem;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .start__button:hover {
+    background-color: map-get(colors.$gold-color, "background");
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+
+.start__button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
