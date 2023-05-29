@@ -1,6 +1,7 @@
 # Hogwarts-BO-M7-herkans
 
-Hier staat de code wat ik heb gemaakt en of aan heb deelgenomen
+**Hier staat de code wat ik heb gemaakt en of aan heb deelgenomen**
+
 <br>
 de custom avatar kon ik wegens tijdsgebrek en hele slecht communicatie met teamleden niet kunnen recht zetten op de normale page maar  het responsive voor de mobiele versie rond 400px is wel gelukt, de losstaande versie is wel responsive en helemaal goed en functionerend.
 
